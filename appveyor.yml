@@ -1,0 +1,36 @@
+-
+  branches:
+    only:
+    - nuget  
+  
+  before_build:
+    - nuget restore GhprConsole/GhprConsole.sln
+
+  build_script: 
+    - msbuild GhprConsole/GhprConsole.sln /p:Configuration=Release /t:Rebuild
+
+  after_build:
+    - nuget pack "GhprConsole/GhprConsole.csproj" -Prop Configuration=Release
+
+  artifacts:
+    - path: '*.nupkg'
+      name: nupkg
+
+  deploy:
+    provider: NuGet
+    server: 
+    api_key:
+      secure: crLYbWXNgfrzYazkV18cEBRKnl90ee0wjWUfZGIDhkZcZg1ZlGbbsqRdr8JLmU3O
+    skip_symbols: false
+    artifact: nupkg
+    
+-
+  branches:
+    except:
+    - nuget 
+    
+  before_build:
+    - nuget restore GhprConsole/GhprConsole.sln
+
+  build_script: 
+    - msbuild GhprConsole/GhprConsole.sln /p:Configuration=Release /t:Rebuild

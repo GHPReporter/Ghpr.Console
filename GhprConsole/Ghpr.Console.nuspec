@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/GHPReporter/Ghpr.Console/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/GHPReporter/Ghpr.Console</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Reporter console app</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright Evgeniy Kosjakov © 2016</copyright>
+    <tags></tags>
+  </metadata>
+</package>
