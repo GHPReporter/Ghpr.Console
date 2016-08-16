@@ -10,7 +10,7 @@
     - msbuild GhprConsole/GhprConsole.sln /p:Configuration=Release /t:Rebuild
 
   after_build:
-    - nuget pack "GhprConsole/GhprConsole.csproj" -Prop Configuration=Release
+    - nuget pack "GhprConsole/Ghpr.Console.csproj" -Prop Configuration=Release
 
   artifacts:
     - path: '*.nupkg'
