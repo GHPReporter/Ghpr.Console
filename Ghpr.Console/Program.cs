@@ -1,4 +1,4 @@
-﻿namespace GhprConsole
+﻿namespace Ghpr.Console
 {
     public class Program
     {
