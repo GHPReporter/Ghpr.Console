@@ -4,13 +4,13 @@
     - nuget  
   
   before_build:
-    - nuget restore GhprConsole/GhprConsole.sln
+    - nuget restore Ghpr.Console/Ghpr.Console.sln
 
   build_script: 
-    - msbuild GhprConsole/GhprConsole.sln /p:Configuration=Release /t:Rebuild
+    - msbuild Ghpr.Console/Ghpr.Console.sln /p:Configuration=Release /t:Rebuild
 
   after_build:
-    - nuget pack "GhprConsole/Ghpr.Console.csproj" -Prop Configuration=Release
+    - nuget pack "Ghpr.Console/Ghpr.Console.csproj" -Prop Configuration=Release
 
   artifacts:
     - path: '*.nupkg'
@@ -30,7 +30,7 @@
     - nuget 
     
   before_build:
-    - nuget restore GhprConsole/GhprConsole.sln
+    - nuget restore Ghpr.Console/Ghpr.Console.sln
 
   build_script: 
-    - msbuild GhprConsole/GhprConsole.sln /p:Configuration=Release /t:Rebuild
+    - msbuild Ghpr.Console/Ghpr.Console.sln /p:Configuration=Release /t:Rebuild
