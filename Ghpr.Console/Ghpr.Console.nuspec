@@ -12,7 +12,21 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Reporter console app</description>
     <releaseNotes></releaseNotes>
-    <copyright>Copyright Evgeniy Kosjakov © 2016</copyright>
+    <copyright>Copyright Evgeniy Kosjakov © 2016-2018</copyright>
     <tags>.NET console HTML report reporting tool</tags>
+    <dependencies>
+      <dependency id="Ghpr.Core" version="0.8.0.2" />
+      <dependency id="Ghpr.NUnit" version="0.8.0.2" />
+      <dependency id="Ghpr.MSTest" version="0.8.0.2" />
+      <dependency id="NUnit" version="3.9.0" />
+      <dependency id="NUnit.Engine" version="3.7.0" />
+      <dependency id="Newtonsoft.Json" version="10.0.3" />
+    </dependencies>
   </metadata>
+  <files>
+    <file src="bin\Release\Ghpr.Console.exe" target="lib" />
+    <file src="bin\Release\Ghpr.MSTest.Settings.json" target="content" />
+    <file src="bin\Release\Ghpr.NUnit.Settings.json" target="content" />
+    <file src="bin\Release\Ghpr.Core.Settings.json" target="content" />
+  </files>
 </package>

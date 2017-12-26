@@ -3,15 +3,16 @@
   <br><br>
   <b>Some Links:</b><br>
   <a href="https://github.com/GHPReporter/Ghpr.Core">Core</a> |
-  <a href="https://github.com/GHPReporter/Ghpr.NUnit">NUnit</a> |
   <a href="https://github.com/GHPReporter/Ghpr.MSTest">MSTest</a> |
+  <a href="https://github.com/GHPReporter/Ghpr.NUnit">NUnit</a> |
+  <a href="https://github.com/GHPReporter/Ghpr.SpecFlow">SpecFlow</a> |
   <a href="https://github.com/GHPReporter/Ghpr.Console">Console</a> |
   <a href="https://github.com/GHPReporter/GHPReporter.github.io/">Site Repo</a>
 </p>
 
 [![Language](http://gh-toprated.info/Badges/LanguageBadge?user=GHPReporter&repo=Ghpr.Console&theme=light&fontWeight=bold)](https://github.com/GHPReporter/Ghpr.Console)
 [![Build status](https://ci.appveyor.com/api/projects/status/1nhj8penho50h2ro?svg=true)](https://ci.appveyor.com/project/elv1s42/ghpr-console)
-[![NuGet Version](https://img.shields.io/nuget/v/GhprConsole.svg)](https://www.nuget.org/packages/GhprConsole)
+[![NuGet Version](https://img.shields.io/nuget/v/Ghpr.Console.svg)](https://www.nuget.org/packages/Ghpr.Console)
 
 # Ghpr.Console
 
