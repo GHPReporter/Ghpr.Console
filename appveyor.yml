@@ -34,3 +34,5 @@
 
   build_script: 
     - msbuild Ghpr.Console/Ghpr.Console.sln /p:Configuration=Release /t:Rebuild
+
+  test: off
