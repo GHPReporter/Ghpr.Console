@@ -9,7 +9,12 @@ namespace Ghpr.Console
     {
         public static void Main(string[] args)
         {
-            if (args[0] ==null)
+            if (args == null)
+            {
+                System.Console.WriteLine("Please add path to file with test results as console argument");
+                throw new ArgumentNullException(nameof(args), "No arguments found!");
+            }
+            if (args[0] == null)
             {
                 System.Console.WriteLine("Please add path to file with test results as console argument");
                 throw new ArgumentNullException(args[0], "Path argument not found!");
@@ -18,7 +23,7 @@ namespace Ghpr.Console
             if (!File.Exists(path))
             {
                 System.Console.WriteLine($"File '{path} was not found'");
-                throw new FileNotFoundException("File wasnot found!", path);
+                throw new FileNotFoundException("File was not found!", path);
             }
             var ext = Path.GetExtension(path).ToLower();
             switch (ext)
