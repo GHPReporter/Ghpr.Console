@@ -22,7 +22,7 @@ namespace Ghpr.Console
             var path = args[0];
             if (!File.Exists(path))
             {
-                System.Console.WriteLine($"File '{path} was not found'");
+                System.Console.WriteLine($"File '{path}' was not found");
                 throw new FileNotFoundException("File was not found!", path);
             }
             var ext = Path.GetExtension(path).ToLower();
