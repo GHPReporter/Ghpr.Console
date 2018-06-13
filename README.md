@@ -21,6 +21,6 @@
 
  - download Ghpr.Console as Nuget package
  - make sure you have `.json` settings file in the same folder as Ghpr.Console.exe file
- - run Ghpr.Console.exe with one argument: path to `.xml` or `.trx` file with test results
+ - run Ghpr.Console.exe with one or several arguments: paths to `.xml` or `.trx` files with test results
  
 If your file extension is `.xml` then Ghpr.NUnit will be used to generate test results, else if the extension is `.trx` then Ghpr.MSTest will be used to generate report from file.
