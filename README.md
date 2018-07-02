@@ -24,3 +24,7 @@
  - run Ghpr.Console.exe with one or several arguments: paths to `.xml` or `.trx` files with test results
  
 If your file extension is `.xml` then Ghpr.NUnit will be used to generate test results, else if the extension is `.trx` then Ghpr.MSTest will be used to generate report from file.
+
+# Release notes
+
+You can find it [here](https://github.com/GHPReporter/Ghpr.Core/blob/master/RELEASE_NOTES.md) for all packages.
