@@ -36,14 +36,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Ghpr.Core, Version=0.8.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Ghpr.Core.0.8.2\lib\net452\Ghpr.Core.dll</HintPath>
+    <Reference Include="Ghpr.Core, Version=0.9.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Ghpr.Core.0.9.0.4\lib\net452\Ghpr.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Ghpr.MSTest, Version=0.8.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Ghpr.MSTest.0.8.2\lib\net452\Ghpr.MSTest.dll</HintPath>
+    <Reference Include="Ghpr.LocalFileSystem, Version=0.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Ghpr.LocalFileSystem.0.9.0\lib\net452\Ghpr.LocalFileSystem.dll</HintPath>
     </Reference>
-    <Reference Include="Ghpr.NUnit, Version=0.8.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Ghpr.NUnit.0.8.2\lib\net452\Ghpr.NUnit.dll</HintPath>
+    <Reference Include="Ghpr.MSTest, Version=0.9.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Ghpr.MSTest.0.9.0.4\lib\net452\Ghpr.MSTest.dll</HintPath>
+    </Reference>
+    <Reference Include="Ghpr.NUnit, Version=0.9.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Ghpr.NUnit.0.9.0.4\lib\net452\Ghpr.NUnit.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil, Version=0.9.6.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
       <HintPath>packages\NUnit.Engine.3.8.0\lib\Mono.Cecil.dll</HintPath>
@@ -67,6 +70,7 @@
       <HintPath>packages\NUnit.3.10.1\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -76,6 +80,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmptyTestDataProvider.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReportHelper.cs" />
@@ -83,15 +88,15 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Ghpr.Console.nuspec" />
-    <Content Include="Ghpr.Core.Settings.json">
+    <None Include="Ghpr.Core.Settings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Ghpr.MSTest.Settings.json">
+    </None>
+    <None Include="Ghpr.MSTest.Settings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Ghpr.NUnit.Settings.json">
+    </None>
+    <None Include="Ghpr.NUnit.Settings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

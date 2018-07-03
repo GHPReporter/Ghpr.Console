@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using Ghpr.Core;
 using Ghpr.Core.Common;
-using Ghpr.Core.Interfaces;
+using Ghpr.Core.Factories;
 using Ghpr.MSTest.Utils;
 using Ghpr.NUnit.Utils;
 
@@ -20,7 +19,7 @@ namespace Ghpr.Console
                     GhprNUnitRunHelper.CreateReportFromFile(path);
                     break;
                 case ".trx":
-                    GhprMSTestRunHelper.CreateReportFromFile(path);
+                    GhprMSTestRunHelper.CreateReportFromFile(path, new EmptyTestDataProvider());
                     break;
                 default:
                     throw new Exception($"Unsupported file extension: '{ext}'. " +
@@ -30,14 +29,15 @@ namespace Ghpr.Console
 
         public static void GenerateReport(string[] paths)
         {
-            var tests = new List<ITestRun>();
+            var reporter = ReporterFactory.Build(new EmptyTestDataProvider());
+            var tests = new List<KeyValuePair<TestRunDto, TestOutputDto>>();
             foreach (var path in paths)
             {
                 var ext = Path.GetExtension(path)?.ToLower();
                 switch (ext)
                 {
                     case ".xml":
-                        tests.AddRange(GhprNUnitRunHelper.GetTestRunsListFromFile(path));
+                        tests.AddRange(GhprNUnitRunHelper.GetTestRunsListFromFile(path, reporter.Logger));
                         break;
                     case ".trx":
                         tests.AddRange(GhprMSTestRunHelper.GetTestRunsListFromFile(path));
@@ -48,7 +48,6 @@ namespace Ghpr.Console
                         break;
                 }
             }
-            var reporter = new Reporter();
             reporter.GenerateFullReport(tests);
         }
     }

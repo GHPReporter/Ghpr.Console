@@ -11,16 +11,17 @@
     <iconUrl>https://github.com/GHPReporter/GHPReporter.github.io/blob/master/img/logo-small.png?raw=true</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Reporter console app</description>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>https://github.com/GHPReporter/Ghpr.Core/blob/master/RELEASE_NOTES.md</releaseNotes>
     <copyright>Copyright Evgeniy Kosjakov © 2016-2018</copyright>
     <tags>.NET console HTML report reporting tool</tags>
     <dependencies>
-      <dependency id="Ghpr.Core" version="0.8.2.0" />
-      <dependency id="Ghpr.NUnit" version="0.8.2.0" />
-      <dependency id="Ghpr.MSTest" version="0.8.2.0" />
+      <dependency id="Ghpr.Core" version="0.9.0.4" />
+      <dependency id="Ghpr.NUnit" version="0.9.0.4" />
+      <dependency id="Ghpr.MSTest" version="0.9.0.4" />
+      <dependency id="Ghpr.LocalFileSystem" version="0.9.0.0" />
       <dependency id="NUnit" version="3.9.0" />
       <dependency id="NUnit.Engine" version="3.8.0" />
-      <dependency id="Newtonsoft.Json" version="10.0.3" />
+      <dependency id="Newtonsoft.Json" version="11.0.2" />
     </dependencies>
   </metadata>
   <files>
