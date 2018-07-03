@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Ghpr.Core.Common;
 using Ghpr.Core.Factories;
 using Ghpr.MSTest.Utils;
@@ -37,7 +38,8 @@ namespace Ghpr.Console
                 switch (ext)
                 {
                     case ".xml":
-                        tests.AddRange(GhprNUnitRunHelper.GetTestRunsListFromFile(path, reporter.Logger));
+                        tests.AddRange(GhprNUnitRunHelper.GetTestRunsListFromFile(path, reporter.Logger)
+                            .Select(g => new KeyValuePair<TestRunDto, TestOutputDto>(g.GhprTestRun, g.GhprTestOutput)).ToList());
                         break;
                     case ".trx":
                         tests.AddRange(GhprMSTestRunHelper.GetTestRunsListFromFile(path));
