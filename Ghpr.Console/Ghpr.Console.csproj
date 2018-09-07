@@ -93,7 +93,9 @@
     <None Include="Ghpr.MSTest.Settings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Ghpr.NUnit.Settings.json" />
+    <None Include="Ghpr.NUnit.Settings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
