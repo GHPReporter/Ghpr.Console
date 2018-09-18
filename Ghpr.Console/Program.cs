@@ -5,31 +5,31 @@ namespace Ghpr.Console
 {
     public class Program
     {
-        public static void Main(string[] paths)
+        public static void Main(string[] args)
         {
-            if (paths == null)
+            if (args == null)
             {
                 System.Console.WriteLine("Please add path to file with test results as console argument");
-                throw new ArgumentNullException(nameof(paths), "No arguments found!");
+                throw new ArgumentNullException(nameof(args), "No arguments found!");
             }
-            if (paths[0] == null)
+            if (args[0] == null)
             {
                 System.Console.WriteLine("Please add path to file with test results as console argument");
-                throw new ArgumentNullException(paths[0], "Path argument not found!");
+                throw new ArgumentNullException(args[0], "Path argument not found!");
             }
-            var path = paths[0];
+            var path = args[0];
             if (!File.Exists(path))
             {
                 System.Console.WriteLine($"File '{path}' was not found");
                 throw new FileNotFoundException("File was not found!", path);
             }
-            if (paths.Length == 1)
+            if (args.Length == 1)
             {
                 ReportHelper.GenerateReport(path);
             }
             else
             {
-                ReportHelper.GenerateReport(paths);
+                ReportHelper.GenerateReport(args);
             }
         }
     }

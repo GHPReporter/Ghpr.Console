@@ -5,6 +5,7 @@ using System.Linq;
 using Ghpr.Core.Common;
 using Ghpr.Core.Factories;
 using Ghpr.MSTest.Utils;
+using Ghpr.MSTestV2.Utils;
 using Ghpr.NUnit.Utils;
 
 namespace Ghpr.Console
@@ -19,8 +20,11 @@ namespace Ghpr.Console
                 case ".xml":
                     GhprNUnitRunHelper.CreateReportFromFile(path);
                     break;
+                //case ".trx":
+                //    GhprMSTestRunHelper.CreateReportFromFile(path, new EmptyTestDataProvider());
+                //    break;
                 case ".trx":
-                    GhprMSTestRunHelper.CreateReportFromFile(path, new EmptyTestDataProvider());
+                    GhprMSTestV2RunHelper.CreateReportFromFile(path, new EmptyTestDataProvider());
                     break;
                 default:
                     throw new Exception($"Unsupported file extension: '{ext}'. " +
@@ -42,7 +46,7 @@ namespace Ghpr.Console
                             .Select(g => new KeyValuePair<TestRunDto, TestOutputDto>(g.GhprTestRun, g.GhprTestOutput)).ToList());
                         break;
                     case ".trx":
-                        tests.AddRange(GhprMSTestRunHelper.GetTestRunsListFromFile(path));
+                        tests.AddRange(GhprMSTestV2RunHelper.GetTestRunsListFromFile(path));
                         break;
                     default:
                         System.Console.WriteLine($"Unsupported file extension: '{ext}' for file '{path}'. " +
