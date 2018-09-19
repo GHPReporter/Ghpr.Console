@@ -30,5 +30,6 @@
     <file src="bin\Release\Ghpr.Core.Settings.json" target="content" />
     <file src="bin\Release\Ghpr.NUnit.Settings.json" target="content" />
     <file src="bin\Release\Ghpr.MSTest.Settings.json" target="content" />
+    <file src="bin\Release\Ghpr.MSTestV2.Settings.json" target="content" />
   </files>
 </package>
