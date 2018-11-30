@@ -17,7 +17,7 @@ namespace Ghpr.Console
                 System.Console.WriteLine("Please add path to file with test results as console argument");
                 throw new ArgumentNullException(args[0], "Path argument not found!");
             }
-            var path = args[0];
+            var path = Path.GetFullPath(args[0]);
             if (!File.Exists(path))
             {
                 System.Console.WriteLine($"File '{path}' was not found");
