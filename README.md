@@ -13,6 +13,7 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/1nhj8penho50h2ro?svg=true)](https://ci.appveyor.com/project/elv1s42/ghpr-console)
 [![NuGet Version](https://img.shields.io/nuget/v/Ghpr.Console.svg)](https://www.nuget.org/packages/Ghpr.Console)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/09d98c433f034ce2ab7f4e7a655ea3f0)](https://www.codacy.com/app/42_/Ghpr.Console?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=GHPReporter/Ghpr.Console&amp;utm_campaign=Badge_Grade)
 [![CodeFactor](https://www.codefactor.io/repository/github/ghpreporter/ghpr.console/badge)](https://www.codefactor.io/repository/github/ghpreporter/ghpr.console)
 
 # Ghpr.Console
