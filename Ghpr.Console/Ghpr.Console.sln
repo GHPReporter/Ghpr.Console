@@ -1,22 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ghpr.Console", "Ghpr.Console.csproj", "{26B5289B-FDF6-4928-989A-F5DAFA84A395}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{26B5289B-FDF6-4928-989A-F5DAFA84A395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{26B5289B-FDF6-4928-989A-F5DAFA84A395}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{26B5289B-FDF6-4928-989A-F5DAFA84A395}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{26B5289B-FDF6-4928-989A-F5DAFA84A395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26B5289B-FDF6-4928-989A-F5DAFA84A395}.Debug|x86.ActiveCfg = Debug|x86
+		{26B5289B-FDF6-4928-989A-F5DAFA84A395}.Debug|x86.Build.0 = Debug|x86
+		{26B5289B-FDF6-4928-989A-F5DAFA84A395}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{26B5289B-FDF6-4928-989A-F5DAFA84A395}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{26B5289B-FDF6-4928-989A-F5DAFA84A395}.Release|x86.ActiveCfg = Debug|x86
+		{26B5289B-FDF6-4928-989A-F5DAFA84A395}.Release|x86.Build.0 = Debug|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41013FBB-DB5A-46C1-93D9-4F27DAEFD355}
 	EndGlobalSection
 EndGlobal
