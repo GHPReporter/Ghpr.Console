@@ -1,7 +1,7 @@
 ﻿using System;
 using Ghpr.Core.Interfaces;
 
-namespace Ghpr.Console
+namespace Ghpr.Cli
 {
     public class EmptyTestDataProvider : ITestDataProvider
     {

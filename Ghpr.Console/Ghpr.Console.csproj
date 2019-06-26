@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="packages\NUnit.3.11.0\build\NUnit.props" Condition="Exists('packages\NUnit.3.11.0\build\NUnit.props')" />
+  <Import Project="packages\NUnit.3.12.0\build\NUnit.props" Condition="Exists('packages\NUnit.3.12.0\build\NUnit.props')" />
   <Import Project="packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.props" Condition="Exists('packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -9,7 +9,7 @@
     <ProjectGuid>{26B5289B-FDF6-4928-989A-F5DAFA84A395}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ghpr.Console</RootNamespace>
+    <RootNamespace>Ghpr.Cli</RootNamespace>
     <AssemblyName>Ghpr.Console</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -58,20 +58,20 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Ghpr.Core, Version=0.9.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Ghpr.Core.0.9.4\lib\net452\Ghpr.Core.dll</HintPath>
+    <Reference Include="Ghpr.Core, Version=0.9.9.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Ghpr.Core.0.9.9\lib\net452\Ghpr.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Ghpr.LocalFileSystem, Version=0.9.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Ghpr.LocalFileSystem.0.9.4\lib\net452\Ghpr.LocalFileSystem.dll</HintPath>
+    <Reference Include="Ghpr.LocalFileSystem, Version=0.9.9.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Ghpr.LocalFileSystem.0.9.9\lib\net452\Ghpr.LocalFileSystem.dll</HintPath>
     </Reference>
-    <Reference Include="Ghpr.MSTest, Version=0.9.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Ghpr.MSTest.0.9.4\lib\net452\Ghpr.MSTest.dll</HintPath>
+    <Reference Include="Ghpr.MSTest, Version=0.9.9.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Ghpr.MSTest.0.9.9\lib\net452\Ghpr.MSTest.dll</HintPath>
     </Reference>
-    <Reference Include="Ghpr.MSTestV2, Version=0.9.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Ghpr.MSTestV2.0.9.4\lib\net452\Ghpr.MSTestV2.dll</HintPath>
+    <Reference Include="Ghpr.MSTestV2, Version=0.9.9.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Ghpr.MSTestV2.0.9.9\lib\net452\Ghpr.MSTestV2.dll</HintPath>
     </Reference>
-    <Reference Include="Ghpr.NUnit, Version=0.9.4.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Ghpr.NUnit.0.9.4.1\lib\net452\Ghpr.NUnit.dll</HintPath>
+    <Reference Include="Ghpr.NUnit, Version=0.9.9.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Ghpr.NUnit.0.9.9\lib\net452\Ghpr.NUnit.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\MSTest.TestFramework.1.4.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
@@ -80,25 +80,25 @@
       <HintPath>packages\MSTest.TestFramework.1.4.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil, Version=0.9.6.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
-      <HintPath>packages\NUnit.Engine.3.9.0\lib\Mono.Cecil.dll</HintPath>
+      <HintPath>packages\NUnit.Engine.3.10.0\lib\net20\Mono.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="nunit-agent, Version=3.9.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\NUnit.Engine.3.9.0\lib\nunit-agent.exe</HintPath>
+    <Reference Include="nunit-agent, Version=3.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\NUnit.Engine.3.10.0\lib\net20\nunit-agent.exe</HintPath>
     </Reference>
-    <Reference Include="nunit-agent-x86, Version=3.9.0.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>packages\NUnit.Engine.3.9.0\lib\nunit-agent-x86.exe</HintPath>
+    <Reference Include="nunit-agent-x86, Version=3.10.0.0, Culture=neutral, processorArchitecture=x86">
+      <HintPath>packages\NUnit.Engine.3.10.0\lib\net20\nunit-agent-x86.exe</HintPath>
     </Reference>
-    <Reference Include="nunit.engine, Version=3.9.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>packages\NUnit.Engine.3.9.0\lib\nunit.engine.dll</HintPath>
+    <Reference Include="nunit.engine, Version=3.10.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>packages\NUnit.Engine.3.10.0\lib\net20\nunit.engine.dll</HintPath>
     </Reference>
     <Reference Include="nunit.engine.api, Version=3.0.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>packages\NUnit.Engine.3.9.0\lib\nunit.engine.api.dll</HintPath>
+      <HintPath>packages\NUnit.Engine.3.10.0\lib\net20\nunit.engine.api.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.framework, Version=3.11.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>packages\NUnit.3.11.0\lib\net45\nunit.framework.dll</HintPath>
+    <Reference Include="nunit.framework, Version=3.12.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>packages\NUnit.3.12.0\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -118,18 +118,10 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Ghpr.Console.nuspec" />
-    <None Include="Ghpr.Core.Settings.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Ghpr.MSTest.Settings.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Ghpr.MSTestV2.Settings.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Ghpr.NUnit.Settings.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="Ghpr.Core.Settings.json" />
+    <None Include="Ghpr.MSTest.Settings.json" />
+    <None Include="Ghpr.MSTestV2.Settings.json" />
+    <None Include="Ghpr.NUnit.Settings.json" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -138,7 +130,7 @@
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <Error Condition="!Exists('packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.props'))" />
     <Error Condition="!Exists('packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.targets'))" />
-    <Error Condition="!Exists('packages\NUnit.3.11.0\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\NUnit.3.11.0\build\NUnit.props'))" />
+    <Error Condition="!Exists('packages\NUnit.3.12.0\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\NUnit.3.12.0\build\NUnit.props'))" />
   </Target>
   <Import Project="packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.targets" Condition="Exists('packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

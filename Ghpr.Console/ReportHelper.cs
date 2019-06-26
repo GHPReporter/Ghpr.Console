@@ -4,11 +4,10 @@ using System.IO;
 using System.Linq;
 using Ghpr.Core.Common;
 using Ghpr.Core.Factories;
-using Ghpr.MSTest.Utils;
 using Ghpr.MSTestV2.Utils;
 using Ghpr.NUnit.Utils;
 
-namespace Ghpr.Console
+namespace Ghpr.Cli
 {
     public class ReportHelper
     {
@@ -49,7 +48,7 @@ namespace Ghpr.Console
                         tests.AddRange(GhprMSTestV2RunHelper.GetTestRunsListFromFile(path));
                         break;
                     default:
-                        System.Console.WriteLine($"Unsupported file extension: '{ext}' for file '{path}'. " +
+                        Console.WriteLine($"Unsupported file extension: '{ext}' for file '{path}'. " +
                                             "Only '.xml' and '.trx' extensions supported.");
                         break;
                 }
