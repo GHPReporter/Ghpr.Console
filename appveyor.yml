@@ -2,7 +2,9 @@
   branches:
     only:
     - nuget  
-  
+
+  image: Visual Studio 2017
+
   before_build:
     - nuget restore Ghpr.Console/Ghpr.Console.sln
 
@@ -25,12 +27,15 @@
       secure: crLYbWXNgfrzYazkV18cEBRKnl90ee0wjWUfZGIDhkZcZg1ZlGbbsqRdr8JLmU3O
     skip_symbols: false
     artifact: nupkg
-    
+
 -
   branches:
     except:
     - nuget 
     
+
+  image: Visual Studio 2017
+
   before_build:
     - nuget restore Ghpr.Console/Ghpr.Console.sln
 
