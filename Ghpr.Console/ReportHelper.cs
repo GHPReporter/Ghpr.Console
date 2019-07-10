@@ -19,9 +19,6 @@ namespace Ghpr.Cli
                 case ".xml":
                     GhprNUnitRunHelper.CreateReportFromFile(path);
                     break;
-                //case ".trx":
-                //    GhprMSTestRunHelper.CreateReportFromFile(path, new EmptyTestDataProvider());
-                //    break;
                 case ".trx":
                     GhprMSTestV2RunHelper.CreateReportFromFile(path, new EmptyTestDataProvider());
                     break;

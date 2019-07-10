@@ -58,20 +58,20 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Ghpr.Core, Version=0.9.9.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Ghpr.Core.0.9.9\lib\net452\Ghpr.Core.dll</HintPath>
+    <Reference Include="Ghpr.Core, Version=0.9.9.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Ghpr.Core.0.9.9.1\lib\net452\Ghpr.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Ghpr.LocalFileSystem, Version=0.9.9.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Ghpr.LocalFileSystem.0.9.9\lib\net452\Ghpr.LocalFileSystem.dll</HintPath>
+    <Reference Include="Ghpr.LocalFileSystem, Version=0.9.9.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Ghpr.LocalFileSystem.0.9.9.2\lib\net452\Ghpr.LocalFileSystem.dll</HintPath>
     </Reference>
     <Reference Include="Ghpr.MSTest, Version=0.9.9.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Ghpr.MSTest.0.9.9\lib\net452\Ghpr.MSTest.dll</HintPath>
     </Reference>
-    <Reference Include="Ghpr.MSTestV2, Version=0.9.9.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Ghpr.MSTestV2.0.9.9\lib\net452\Ghpr.MSTestV2.dll</HintPath>
+    <Reference Include="Ghpr.MSTestV2, Version=0.9.9.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Ghpr.MSTestV2.0.9.9.1\lib\net452\Ghpr.MSTestV2.dll</HintPath>
     </Reference>
-    <Reference Include="Ghpr.NUnit, Version=0.9.9.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Ghpr.NUnit.0.9.9\lib\net452\Ghpr.NUnit.dll</HintPath>
+    <Reference Include="Ghpr.NUnit, Version=0.9.9.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Ghpr.NUnit.0.9.9.1\lib\net452\Ghpr.NUnit.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\MSTest.TestFramework.1.4.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
@@ -118,18 +118,12 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Ghpr.Console.nuspec" />
-    <None Include="Ghpr.Core.Settings.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="Ghpr.Core.Settings.json" />
     <None Include="Ghpr.MSTest.Settings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Ghpr.MSTestV2.Settings.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Ghpr.NUnit.Settings.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="Ghpr.MSTestV2.Settings.json" />
+    <None Include="Ghpr.NUnit.Settings.json" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>

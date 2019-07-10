@@ -25,11 +25,15 @@ namespace Ghpr.Cli
             }
             if (args.Length == 1)
             {
+                Console.WriteLine($"Generating the report for the file '{path}'...");
                 ReportHelper.GenerateReport(path);
+                Console.WriteLine("Generating the report done.");
             }
             else
             {
+                Console.WriteLine($"Generating the report for multiple files ({args.Length} in total)...");
                 ReportHelper.GenerateReport(args);
+                Console.WriteLine("Generating the report done.");
             }
         }
     }
