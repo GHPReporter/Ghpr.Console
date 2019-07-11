@@ -36,10 +36,10 @@
     <file src=".\bin\Release\net47\Ghpr.Console.exe" target="lib\net47" />
     <file src=".\bin\Release\net471\Ghpr.Console.exe" target="lib\net471" />
     <file src=".\bin\Release\net472\Ghpr.Console.exe" target="lib\net472" />
-    <file src=".\bin\Release\netcoreapp2.0\Ghpr.Console.exe" target="lib\netcoreapp2.0" />
-    <file src=".\bin\Release\netcoreapp2.1\Ghpr.Console.exe" target="lib\netcoreapp2.1" />
-    <file src=".\bin\Release\netcoreapp2.2\Ghpr.Console.exe" target="lib\netcoreapp2.2" />
-    <file src=".\bin\Release\netstandard2.0\Ghpr.Console.exe" target="lib\netstandard2.0" />
+    <file src=".\bin\Release\netcoreapp2.0\Ghpr.Console.dll" target="lib\netcoreapp2.0" />
+    <file src=".\bin\Release\netcoreapp2.1\Ghpr.Console.dll" target="lib\netcoreapp2.1" />
+    <file src=".\bin\Release\netcoreapp2.2\Ghpr.Console.dll" target="lib\netcoreapp2.2" />
+    <file src=".\bin\Release\netstandard2.0\Ghpr.Console.dll" target="lib\netstandard2.0" />
     <file src=".\bin\Release\net45\Ghpr.NUnit.Settings.json" target="content" />
     <file src=".\bin\Release\net45\Ghpr.Core.Settings.json" target="content" />
     <file src=".\bin\Release\net45\Ghpr.MSTestV2.Settings.json" target="content" />
