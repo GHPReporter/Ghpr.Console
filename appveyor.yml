@@ -6,18 +6,18 @@
   image: Visual Studio 2017
 
   before_build:
-    - nuget restore Ghpr.Console/Ghpr.Console.sln
+    - dotnet restore Ghpr.Console/Ghpr.Console.sln
 
   build_script: 
-    - msbuild Ghpr.Console/Ghpr.Console.sln /p:Configuration=Release /t:Rebuild
+    - dotnet build Ghpr.Console/Ghpr.Console.sln /p:Configuration=Release /t:Rebuild
     
   test: off
 
   after_build:
-    - nuget pack "Ghpr.Console/Ghpr.Console.csproj" -Prop Configuration=Release
+    - dotnet pack -c Release "Ghpr.Console/Ghpr.Console.csproj" /p:NuspecFile="Ghpr.Console.nuspec"
 
   artifacts:
-    - path: '*.nupkg'
+    - path: '**\*.nupkg'
       name: nupkg
 
   deploy:
@@ -37,9 +37,9 @@
   image: Visual Studio 2017
 
   before_build:
-    - nuget restore Ghpr.Console/Ghpr.Console.sln
+    - dotnet restore Ghpr.Console/Ghpr.Console.sln
 
   build_script: 
-    - msbuild Ghpr.Console/Ghpr.Console.sln /p:Configuration=Release /t:Rebuild
+    - dotnet build Ghpr.Console/Ghpr.Console.sln /p:Configuration=Release /t:Rebuild
 
   test: off

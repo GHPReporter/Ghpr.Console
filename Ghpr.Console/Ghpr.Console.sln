@@ -15,12 +15,12 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{26B5289B-FDF6-4928-989A-F5DAFA84A395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{26B5289B-FDF6-4928-989A-F5DAFA84A395}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{26B5289B-FDF6-4928-989A-F5DAFA84A395}.Debug|x86.ActiveCfg = Debug|x86
-		{26B5289B-FDF6-4928-989A-F5DAFA84A395}.Debug|x86.Build.0 = Debug|x86
+		{26B5289B-FDF6-4928-989A-F5DAFA84A395}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{26B5289B-FDF6-4928-989A-F5DAFA84A395}.Debug|x86.Build.0 = Debug|Any CPU
 		{26B5289B-FDF6-4928-989A-F5DAFA84A395}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26B5289B-FDF6-4928-989A-F5DAFA84A395}.Release|Any CPU.Build.0 = Release|Any CPU
-		{26B5289B-FDF6-4928-989A-F5DAFA84A395}.Release|x86.ActiveCfg = Debug|x86
-		{26B5289B-FDF6-4928-989A-F5DAFA84A395}.Release|x86.Build.0 = Debug|x86
+		{26B5289B-FDF6-4928-989A-F5DAFA84A395}.Release|x86.ActiveCfg = Release|Any CPU
+		{26B5289B-FDF6-4928-989A-F5DAFA84A395}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
