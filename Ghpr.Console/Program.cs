@@ -3,7 +3,7 @@ using System.IO;
 
 namespace Ghpr.Cli
 {
-    public class Program
+    public static class Program
     {
         public static void Main(string[] args)
         {

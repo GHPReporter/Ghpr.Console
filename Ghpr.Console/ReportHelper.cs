@@ -9,7 +9,7 @@ using Ghpr.NUnit.Utils;
 
 namespace Ghpr.Cli
 {
-    public class ReportHelper
+    public static class ReportHelper
     {
         public static void GenerateReport(string path)
         {
