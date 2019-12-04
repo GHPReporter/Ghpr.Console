@@ -51,6 +51,8 @@ namespace Ghpr.Cli
                 }
             }
             reporter.GenerateFullReport(tests);
+            reporter.CleanUpJob();
+            reporter.TearDown();
         }
     }
 }
