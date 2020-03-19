@@ -42,7 +42,8 @@ namespace Ghpr.Cli
                             .Select(g => new KeyValuePair<TestRunDto, TestOutputDto>(g.GhprTestRun, g.GhprTestOutput)).ToList());
                         break;
                     case ".trx":
-                        tests.AddRange(GhprMSTestV2RunHelper.GetTestRunsListFromFile(path));
+                        tests.AddRange(GhprMSTestV2RunHelper.GetTestRunsListFromFile(path)
+                            .Select(g => new KeyValuePair<TestRunDto, TestOutputDto>(g.GhprTestRun, g.GhprTestOutput)).ToList());
                         break;
                     default:
                         Console.WriteLine($"Unsupported file extension: '{ext}' for file '{path}'. " +
