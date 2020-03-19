@@ -4,10 +4,10 @@
     <AssemblyName>Ghpr.Console</AssemblyName>
     <RootNamespace>Ghpr.Console</RootNamespace>
     <DebugType>Full</DebugType>
-    <AssemblyVersion>0.9.10</AssemblyVersion>
-    <FileVersion>0.9.10</FileVersion>
+    <AssemblyVersion>0.9.11</AssemblyVersion>
+    <FileVersion>0.9.11</FileVersion>
     <NeutralLanguage />
-    <Version>0.9.10</Version>
+    <Version>0.9.11</Version>
     <Authors>Evgeniy Kosjakov</Authors>
     <Company>GhpReporter</Company>
     <PackageLicenseUrl>https://github.com/GHPReporter/Ghpr.Core/blob/master/LICENSE</PackageLicenseUrl>
@@ -16,7 +16,7 @@
     <PackageReleaseNotes>https://github.com/GHPReporter/Ghpr.Core/blob/master/RELEASE_NOTES.md</PackageReleaseNotes>
     <RepositoryType />
     <RepositoryUrl>https://github.com/GHPReporter/Ghpr.Console</RepositoryUrl>
-    <Copyright>Copyright Evgeniy Kosjakov © 2016-2019</Copyright>
+    <Copyright>Copyright Evgeniy Kosjakov © 2016-2020</Copyright>
     <Description>Console application to generate the GHPReporter report from NUnit and MSTest test result files</Description>
     <PackageTags>.NET QA package HTML report reporting testing tool framework NUnit 3 MSTest TestFramework DotNet Core</PackageTags>
     <ApplicationIcon />
