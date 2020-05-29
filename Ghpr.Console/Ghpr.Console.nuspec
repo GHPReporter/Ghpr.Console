@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Ghpr.Console</id>
-    <version>0.9.11</version>
+    <version>0.9.12</version>
     <title>Ghpr.Console</title>
     <authors>Evgeniy Kosjakov</authors>
     <owners>Evgeniy Kosjakov</owners>
@@ -16,8 +16,8 @@
     <tags>.NET console HTML report reporting tool</tags>
     <dependencies>
       <dependency id="Ghpr.Core" version="0.9.10" />
-      <dependency id="Ghpr.NUnit" version="0.9.11" />
-      <dependency id="Ghpr.MSTestV2" version="0.9.11" />
+      <dependency id="Ghpr.NUnit" version="0.9.12" />
+      <dependency id="Ghpr.MSTestV2" version="0.9.12" />
       <dependency id="Ghpr.LocalFileSystem" version="0.9.10" />
       <dependency id="NUnit" version="3.12.0" />
       <dependency id="NUnit.Engine" version="3.10.0" />

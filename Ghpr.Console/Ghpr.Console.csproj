@@ -4,10 +4,10 @@
     <AssemblyName>Ghpr.Console</AssemblyName>
     <RootNamespace>Ghpr.Console</RootNamespace>
     <DebugType>Full</DebugType>
-    <AssemblyVersion>0.9.11</AssemblyVersion>
-    <FileVersion>0.9.11</FileVersion>
+    <AssemblyVersion>0.9.12</AssemblyVersion>
+    <FileVersion>0.9.12</FileVersion>
     <NeutralLanguage />
-    <Version>0.9.11</Version>
+    <Version>0.9.12</Version>
     <Authors>Evgeniy Kosjakov</Authors>
     <Company>GhpReporter</Company>
     <PackageLicenseUrl>https://github.com/GHPReporter/Ghpr.Core/blob/master/LICENSE</PackageLicenseUrl>
