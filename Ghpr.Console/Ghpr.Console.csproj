@@ -29,7 +29,7 @@
     <PackageReference Include="Ghpr.LocalFileSystem" Version="0.9.10" />
     <PackageReference Include="Ghpr.MSTestV2" Version="0.9.12" />
     <PackageReference Include="Ghpr.NUnit" Version="0.9.12" />
-    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit" Version="3.13.0" />
     <PackageReference Include="nunit.engine" Version="3.11.1" />
     <PackageReference Include="MSTest.TestFramework" Version="2.1.1" />
     <PackageReference Include="MSTest.TestAdapter" Version="2.1.1" />
