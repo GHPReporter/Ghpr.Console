@@ -1,0 +1,22 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/Ghpr.Console"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: MSTest.TestAdapter
+    versions:
+    - 2.1.2
+    - 2.2.1
+    - 2.2.2
+  - dependency-name: MSTest.TestFramework
+    versions:
+    - 2.1.2
+    - 2.2.1
+    - 2.2.2
+  - dependency-name: NUnit
+    versions:
+    - 3.13.0
+    - 3.13.1
